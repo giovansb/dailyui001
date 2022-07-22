@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+body, button, input, select, textarea {
+    font-family: 'Poppins', sans-serif;}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0%;
+}
+
+
+.mobile-container {
+    background-image: url(/back.jpg);
+    position: relative;
+    overflow: auto;
+    
+}
+
+.mobile-container .mobile-container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 120px;
+    color: white;
+}
+
+p {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.mobile-container-text p {
+    width: 700px;
+}
+
+.mobile-container svg{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    
+}
+
+.mobile-container .input-enter {
+    margin-top: 85px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.mobile-container .input-enter .create-account{
+    background-color: white;
+    color: green;
+    font-size: 18px;
+}
+
+.mobile-container .input-enter .sign-in{
+    background-color: darkgreen;opacity: 0.65;
+    color: white;
+    font-size: 18px;
+}
+
+input[type="submit"] {
+    width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    border: 0;
+}
+
+
+
+.mobile-container .link-skip {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.create-account-container {
+    position: relative;
+}
+.create-account-container .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: darkgreen;
+}
+.create-account-container .create-account-text{
+    margin-left: 20vw;
+    padding-top: 20vh;
+    
+}
+.create-account-container .create-account-text h1, .create-account-text p {
+    color: darkgreen;
+}
+
+.create-account-container .create-account-text h1 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.create-account-container .create-account-text p {
+    text-align: left;
+}
+
+.create-account-container .photo-container-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.create-account-container .photo img {
+    border-radius: 20px;
+    height: 15vh;
+    width: 15vh;
+    margin-left: 20vw;
+}
+
+
+.create-account-container .input-container input {
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    color: rgb(104, 100, 100);
+    padding: 10px 155px 5px 25px;
+    margin-bottom: 2vh;
+}
+
+.create-account-container .input-checkbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.create-account-container .input-checkbox label {
+    color: darkgreen;
+}
+
+.create-account-container .input-checkbox label a {
+    font-weight: 800;
+}
+
+.create-account-container .send-otp{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.create-account-container .send-otp input {
+    background-color: darkgreen;
+    color: white;
+}
+/*Responsividade*/
+
+/*smartphone*/
+@media (max-width: 480px) {
+   
+    .mobile-container{
+        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .mobile-container .mobile-container-text {
+        margin-top: 50px;
+    }
+
+    .mobile-container .mobile-container-text p {
+        width: 75%;
+    }
+
+
+    .mobile-container p, .mobile-container h1 {
+        width: 250px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 120px;
+    
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 12px;
+        width: 300px;
+    }
+    .mobile-container .input-enter {
+        margin-top: 55%;
+        height: 200px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .mobile-container .input-enter input[type="submit"] {
+        width: 75%;
+    }
+
+    .mobile-container .link-skip {
+        min-height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .create-account-container .create-account-text {
+        padding-top: 10vh;
+        margin-left: 10vw;
+    }
+
+    .create-account-container .photo-container-input-container {
+        display: block;
+        width: 100%;
+        
+    }
+
+    .create-account-container .photo-container-input-container .photo img{
+        margin-left: 10vw;
+    }
+
+    .create-account-container .input-container{
+        margin-left: 10vw;
+    }
+
+    .create-account-container .input-container input {
+        padding: 10px 55px 5px 25px;
+        margin-bottom: 2vh;
+    }
+
+    .create-account-container .input-checkbox label {
+        font-size: 12px;
+    }
+}

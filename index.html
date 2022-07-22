@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>Dailyui 001</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mobile-container">
+        <i data-feather="arrow-left"></i>
+        <section class="mobile-container-text">
+            <h1 class="title">Travel with us</h1>
+            <p>Explore most beautiful places with the best deals on ferry trips, travel activities, schedules and acomodations.</p>
+        </section>
+        <section class="input-enter">
+            <input type="submit" value="Sign In" class="sign-in">
+            <input type="submit" value="Create Account" class="create-account">
+        </section>
+        <a href="" class="link-skip">SKIP</a>
+    </div>
+    <div class="create-account-container">
+        <i data-feather="arrow-left" class="back"></i>
+        
+        <section class="create-account-text">
+            <h1>Welcome to <br><b>
+            Awayday.</b></h1>
+            <p>We just need a few quick details to continue.</p>
+        </section>
+        <div class="photo-container-input-container">
+            <div class="photo"><img src="/photo.jpg" alt="userphoto"></div>
+            <div class="container-input-container">
+                <div class="input-container">
+                    <input type="text" placeholder="Name">
+                    <i data-feather="check-circle" id="check-circle"></i>
+                </div>
+
+                <div class="input-container">
+                    <input type="tel" placeholder="Enter Mobile Number">
+                </div>
+            </div>
+        </div>
+
+        <div class="input-checkbox">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">I accept all the <a>Terms and conditions.</a></label>
+        </div>
+
+        <div class="send-otp">
+            <input type="submit" value="Send OTP">
+        </div>
+
+
+    </div>
+
+<script>
+feather.replace();
+</script>
+</body>
+</html>
